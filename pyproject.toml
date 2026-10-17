@@ -1,0 +1,15 @@
+[project]
+name = "mcp-server-skills"
+version = "0.2.0"
+description = "Claude Code plugin: skills for auditing, migrating, verifying and upgrading MCP servers"
+requires-python = ">=3.10"
+dependencies = []
+license = { text = "Apache-2.0" }
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+filterwarnings = ["error::DeprecationWarning"]

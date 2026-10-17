@@ -1,0 +1,79 @@
+{
+  "manifestVersion": "1.0",
+  "storeListing": {
+    "distributionCountries": ["US"],
+    "locales": {
+      "en-US": {
+        "default": "DEFAULT",
+        "name": {
+          "value": "Bookshelf Vault",
+          "spokenForm": {}
+        },
+        "shortDescription": "Keep a private log of what matters to you, like sleep, workouts or moods, and hear it back by voice.",
+        "fullDescription": "Bookshelf Vault is your private, structured journal. Define what you track once, then log entries hands-free: say what happened, hear it read back, and confirm before anything is saved. Ask what you track, what a category records, your recent entries, or how much of your plan you use. Answers are short and come five at a time. Your entries belong to your account only; nothing is shared unless you choose to share it from the vault itself.",
+        "examplePhrases": [
+          "Alexa, ask Bookshelf Vault what I'm tracking.",
+          "Alexa, ask Bookshelf Vault to log seven and a half hours of sleep.",
+          "Alexa, ask Bookshelf Vault for my sleep entries from this week.",
+          "Alexa, ask Bookshelf Vault how much of my plan I've used."
+        ],
+        "privacyAndCompliance": {
+          "privacyPolicyUrl": "https://alexa.bookshelf.example/legal/privacy",
+          "termsOfUseUrl": "https://alexa.bookshelf.example/legal/terms"
+        },
+        "mediaAssets": {
+          "icons": {
+            "light": [
+              {
+                "size": "72x72",
+                "uri": "https://alexa.bookshelf.example/assets/icon-72.png"
+              },
+              {
+                "size": "64x64",
+                "uri": "https://alexa.bookshelf.example/assets/icon-64.png"
+              },
+              {
+                "size": "88x88",
+                "uri": "https://alexa.bookshelf.example/assets/icon-88.png"
+              },
+              {
+                "size": "126x126",
+                "uri": "https://alexa.bookshelf.example/assets/icon-126.png"
+              },
+              {
+                "size": "180x180",
+                "uri": "https://alexa.bookshelf.example/assets/icon-180.png"
+              },
+              {
+                "size": "241x241",
+                "uri": "https://alexa.bookshelf.example/assets/icon-241.png"
+              }
+            ],
+            "dark": []
+          },
+          "carouselImages": [
+            {
+              "uri": "https://alexa.bookshelf.example/assets/carousel-600x900.png",
+              "altText": "A teal vault door with a keyhole on a navy background.",
+              "size": "600x900"
+            }
+          ],
+          "bannerImages": []
+        }
+      }
+    }
+  },
+  "integrations": [
+    {
+      "type": "MCP",
+      "config": {
+        "endpoints": {
+          "default": {
+            "type": "HTTPS",
+            "uri": "https://alexa.bookshelf.example/mcp"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@bookshelf/mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/handler.js",
+  "dependencies": {
+    "@bookshelf/auth": "workspace:*",
+    "@modelcontextprotocol/ext-apps": "catalog:",
+    "@modelcontextprotocol/sdk": "catalog:",
+    "zod": "catalog:"
+  }
+}

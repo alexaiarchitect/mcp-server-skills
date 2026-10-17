@@ -1,0 +1,15 @@
+{
+  "name": "alexaiarchitect-mcp-server",
+  "description": "Claude Code skills for auditing, migrating, verifying and upgrading existing MCP servers.",
+  "owner": {
+    "name": "Alex",
+    "email": "alex@alexaiarchitect.com"
+  },
+  "plugins": [
+    {
+      "name": "mcp-server",
+      "source": "./",
+      "description": "Skills for existing MCP servers: review against 2026-07-28, migrate to dual-version, probe, OAuth, Alexa+ add-ons, CI and the upgrade loop."
+    }
+  ]
+}

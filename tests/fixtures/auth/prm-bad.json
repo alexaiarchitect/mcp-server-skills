@@ -1,0 +1,1 @@
+{"resource": "https://other.example/api", "scopes_supported": ["books.read", "offline_access"]}

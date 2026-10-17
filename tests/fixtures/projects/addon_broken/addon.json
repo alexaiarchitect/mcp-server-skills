@@ -1,0 +1,21 @@
+{
+  "manifestVersion": "0.9",
+  "storeListing": {
+    "distributionCountries": ["US", "ES"],
+    "locales": {
+      "en_US": {
+        "name": { "value": "Bookshelf Library Reservation Assistant Pro" },
+        "shortDescription": "Calls the search_books tool and returns JSON from our API endpoint so Alexa can read it to you.",
+        "examplePhrases": ["Find books by Jane Austen", "find books by jane austen"],
+        "privacyAndCompliance": { "privacyPolicyUrl": "http://bookshelf.example/privacy" },
+        "mediaAssets": {
+          "icons": { "light": [{ "size": "72x72", "uri": "https://bookshelf.example/icons/72.gif" }] },
+          "carouselImages": []
+        }
+      }
+    }
+  },
+  "integrations": [
+    { "type": "MCP", "config": { "endpoints": { "default": { "type": "HTTPS", "uri": "http://mcp.bookshelf.example/mcp" } } } }
+  ]
+}

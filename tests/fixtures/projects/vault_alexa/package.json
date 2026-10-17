@@ -1,0 +1,44 @@
+{
+  "name": "bookshelf-vault",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.15.0",
+  "engines": {
+    "node": "24.15.0",
+    "pnpm": "11.15.0"
+  },
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc -b && node scripts/build/lambdas.mjs",
+    "clean": "node node_modules/typescript/bin/tsc -b --clean",
+    "format": "node node_modules/prettier/bin/prettier.cjs --write .",
+    "format:check": "node node_modules/prettier/bin/prettier.cjs --check .",
+    "lint": "node node_modules/eslint/bin/eslint.js . --max-warnings=0",
+    "typecheck": "node node_modules/typescript/bin/tsc -b --pretty false",
+    "test": "node node_modules/vitest/vitest.mjs run",
+    "test:watch": "node node_modules/vitest/vitest.mjs",
+    "security": "bash scripts/security/check.sh",
+    "infra:fmt": "terraform fmt -recursive infrastructure",
+    "infra:fmt:check": "terraform fmt -check -recursive infrastructure",
+    "infra:validate": "bash scripts/infra/validate.sh",
+    "infra:plan": "terragrunt run --all plan --working-dir infrastructure/live/production",
+    "deploy": "bash scripts/infra/deploy.sh",
+    "admin:plan": "node scripts/admin/assign-plan.mjs",
+    "infra:plan:hackathon": "PHASE=plan bash scripts/infra/deploy-hackathon.sh",
+    "local:serve": "node scripts/local/serve.mjs"
+  },
+  "devDependencies": {
+    "@bookshelf-vault/domain": "workspace:*",
+    "@aws-sdk/client-dynamodb": "catalog:",
+    "@aws-sdk/lib-dynamodb": "catalog:",
+    "@eslint/js": "9.39.2",
+    "@types/aws-lambda": "8.10.159",
+    "@types/node": "24.10.1",
+    "esbuild": "0.28.1",
+    "eslint": "9.39.2",
+    "prettier": "3.8.1",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.53.1",
+    "vitest": "4.1.10"
+  }
+}

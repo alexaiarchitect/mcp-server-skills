@@ -1,0 +1,25 @@
+{
+  "name": "@bookshelf-vault/mcp-server",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/handler.js",
+  "types": "dist/handler.d.ts",
+  "dependencies": {
+    "@bookshelf-vault/auth": "workspace:*",
+    "@bookshelf-vault/config": "workspace:*",
+    "@bookshelf-vault/domain": "workspace:*",
+    "@bookshelf-vault/observability": "workspace:*",
+    "@bookshelf-vault/storage": "workspace:*",
+    "@bookshelf-vault/widget-ui": "workspace:*",
+    "@aws-sdk/client-dynamodb": "catalog:",
+    "@aws-sdk/client-s3": "catalog:",
+    "@aws-sdk/client-sqs": "catalog:",
+    "@aws-sdk/lib-dynamodb": "catalog:",
+    "@modelcontextprotocol/server": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "jose": "catalog:"
+  }
+}

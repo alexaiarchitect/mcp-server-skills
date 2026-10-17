@@ -1,0 +1,26 @@
+{
+  "name": "mcp-server",
+  "description": "Audit, migrate, verify and keep upgrading existing MCP servers (TypeScript and Python; Streamable HTTP first, stdio second) against a pinned MCP specification revision, 2026-07-28 by default, dual-version with 2025-era clients. Deterministic stdlib validators plus options-first skills: inventory and protocol-era detection, a static MCP0xx review, an OAuth 2.1 AUT0xx review, planned codemods for SDK v1 to v2 that never edit before you confirm, a urllib-only live probe with latency budgets, an Alexa+ add-on readiness overlay, CI gates, and an upgrade loop that turns a new spec revision into a delta, a re-review and a migration.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Alex",
+    "email": "alex@alexaiarchitect.com"
+  },
+  "homepage": "https://github.com/alexaiarchitect/mcp-server-skills",
+  "repository": "https://github.com/alexaiarchitect/mcp-server-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "2026-07-28",
+    "migration",
+    "conformance",
+    "oauth",
+    "alexa-plus",
+    "aws-lambda"
+  ],
+  "experimental": {
+    "evals": "plugin-evals"
+  }
+}

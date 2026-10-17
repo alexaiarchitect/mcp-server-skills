@@ -1,0 +1,43 @@
+{
+  "manifestVersion": "1.0",
+  "storeListing": {
+    "distributionCountries": ["US"],
+    "locales": {
+      "en-US": {
+        "default": "DEFAULT",
+        "name": { "value": "Bookshelf", "spokenForm": {} },
+        "shortDescription": "Find books in your library and reserve them by voice.",
+        "fullDescription": "Bookshelf searches your local library's catalogue, tells you what is on the shelf, and reserves a copy for you to pick up.",
+        "examplePhrases": [
+          "Find books by Jane Austen",
+          "Is Pride and Prejudice on the shelf?",
+          "Reserve the latest book in my reading list"
+        ],
+        "privacyAndCompliance": {
+          "privacyPolicyUrl": "https://bookshelf.example/privacy",
+          "termsOfUseUrl": "https://bookshelf.example/terms"
+        },
+        "mediaAssets": {
+          "icons": {
+            "light": [
+              { "size": "72x72", "uri": "https://bookshelf.example/icons/72.png" },
+              { "size": "64x64", "uri": "https://bookshelf.example/icons/64.png" },
+              { "size": "88x88", "uri": "https://bookshelf.example/icons/88.png" },
+              { "size": "126x126", "uri": "https://bookshelf.example/icons/126.png" },
+              { "size": "180x180", "uri": "https://bookshelf.example/icons/180.png" },
+              { "size": "241x241", "uri": "https://bookshelf.example/icons/241.png" }
+            ],
+            "dark": []
+          },
+          "carouselImages": [
+            { "uri": "https://bookshelf.example/carousel/1.png", "altText": "A reader asking for a book", "size": "600x900" }
+          ],
+          "bannerImages": []
+        }
+      }
+    }
+  },
+  "integrations": [
+    { "type": "MCP", "config": { "endpoints": { "default": { "type": "HTTPS", "uri": "https://mcp.bookshelf.example/mcp" } } } }
+  ]
+}

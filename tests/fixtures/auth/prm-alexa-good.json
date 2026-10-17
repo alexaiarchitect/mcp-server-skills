@@ -1,0 +1,2 @@
+{"resource": "https://mcp.bookshelf.example/mcp", "authorization_servers": ["https://auth.bookshelf.example"],
+ "scopes_supported": ["mcp:service", "mcp:tools", "mcp:resources"], "bearer_methods_supported": ["header"]}

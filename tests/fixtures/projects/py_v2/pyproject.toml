@@ -1,0 +1,5 @@
+[project]
+name = "library-desk-v2"
+version = "0.2.0"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2.3,<3", "uvicorn>=0.30"]
